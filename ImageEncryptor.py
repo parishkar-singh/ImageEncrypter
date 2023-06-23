@@ -2,6 +2,7 @@
 import os
 import sys
 import hashlib
+import hashlib
 import tkinter as tk
 from tkinter import filedialog
 from tkinter import messagebox
@@ -185,7 +186,7 @@ class MainWindow:
 
         self.should_cancel = False
 
-        root.title("Image Encryptor")
+        root.title("File Encrypter")
         root.configure(bg="#eeeeee")
 
         try:
