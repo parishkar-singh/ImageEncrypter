@@ -11,8 +11,7 @@ from Cryptodome.Cipher import AES
 
 
 class EncryptionTool:
-    """ "EncryptionTool" class from "github.com/nsk89" for file encryption.
-    (Has been modified a bit.) """
+  
     def __init__(self, user_file, user_key, user_salt):
         # get the path to input file
         self.user_file = user_file
@@ -139,28 +138,6 @@ class EncryptionTool:
         # clean up hash object
         del hasher
 
-
-# class EncryptionThread(threading.Thread):
-#     mutual_space = {}
-#     threadLock = threading.Lock()
-
-#     def __init__(self, index):
-#         threading.Thread.__init__(self)
-#         self.threadID = index
-    
-#     def run(self):
-#         try:
-#             pass
-#         except Exception as e:
-#             print(e)
-#             return
-        
-#         # Get lock to synchronize threads
-#         self.threadLock.acquire()
-#         # Append stuff to mutual_space
-        
-#         # Free lock to release next thread
-#         self.threadLock.release()
 
 
 class MainWindow:
@@ -500,7 +477,6 @@ class MainWindow:
 5. Click RESET Button to reset the input fields and status bar.
 6. You can also Click CANCEL Button during Encryption/Decryption to stop the process."""
         )
-
 
 if __name__ == "__main__":
     ROOT = tk.Tk()
