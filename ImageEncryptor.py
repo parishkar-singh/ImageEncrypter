@@ -11,7 +11,7 @@ from Cryptodome.Cipher import AES
 
 
 class EncryptionTool:
-  
+
     def __init__(self, user_file, user_key, user_salt):
         # get the path to input file
         self.user_file = user_file
@@ -46,10 +46,7 @@ class EncryptionTool:
         self.hash_key_salt()
 
     def read_in_chunks(self, file_object, chunk_size=1024):
-        """Lazy function (generator) to read a file piece by piece.
-        Default chunk size: 1k.
-        Code Courtesy: https://stackoverflow.com/questions/519633/lazy-method-for-reading-big-file-in-python
-        """
+
         while True:
             data = file_object.read(chunk_size)
             if not data:
